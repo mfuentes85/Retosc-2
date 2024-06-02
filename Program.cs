@@ -86,7 +86,8 @@ internal partial class Program
                     Console.WriteLine("___________________________________________________________");
                     Console.WriteLine("SISTEMA DE CONTROL ESCOLAR - CONUSLTA DE ALUMNOS Y PROMEDIO");
                     Console.WriteLine("-----------------------------------------------------------");
-
+                    
+                    //Evalua si ya se ha dado alta al menos un alumno y si es el caso imprime los elementos guardados en la lista
                     if (Alumnos.Count > 0) 
                     {
                         foreach (var alumno in Alumnos)
@@ -100,6 +101,7 @@ internal partial class Program
 
                         }
                     }
+                    //Solicita al usuario agregar al menos un alumno a la lista
                     else
                     {
                         
@@ -116,7 +118,7 @@ internal partial class Program
                     }
 
                     break;
-
+                // Sale del sistema
                 case 3:
 
                     Console.WriteLine("______________________________________________________________________________\nSISTEMA DE CONTROL ESCOLAR - ALTA DE ESTUDIANTES Y CONSUTLA DE PROMEDIO FINAL\n------------------------------------------------------------------------------");
@@ -143,7 +145,7 @@ internal partial class Program
 
 
 
-
+    //Define los atributos para el objeto Alumno
     public class Alumno
     {
         public string Nombre { get; set; }
